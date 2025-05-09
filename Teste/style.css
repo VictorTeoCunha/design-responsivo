@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    display: flex;
+    gap: 20px;
+    
+}
+.caixa {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+}
+.caixa:nth-child(1){
+    background-color: lightgreen;
+}
+.caixa:nth-child(2){
+    background-color: lightcoral;
+}
+.caixa:nth-child(3){
+    background-color: lightyellow;
+}
