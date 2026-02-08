@@ -8,81 +8,79 @@
 </head>
 <body>
     <header>
-    <nav>    
-        <div>
-        <img src="/Imagens/Logo.png" alt="Logo">
-        <h2>Agência Criativa Web</h2>
+    <nav class="menu-nav">
+        <div class="menu-nav__container"> 
+        <img class="menu-nav__logo" src="/Imagens/Logo.png" alt="Logo">
+        <h2 class="menu-nav__titulo">Agência Criativa Web</h2>
         </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Serviço</a></li>
-            <li><a href="#depoimentos">Depoimentos</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <img src="Imagens/menuIcon.png" alt="Logo do site"> 
+        <ul class="menu-nav__lista">
+            <li><a class="menu-nav__item " href="#home">Home</a></li>
+            <li><a class="menu-nav__item " href="#sobre">Sobre</a></li>
+            <li><a class="menu-nav__item " href="#depoimentos">Depoimentos</a></li>
+            <li><a class="menu-nav__item " href="#contato">Contato</a></li>
+            <img class="menu-nav__itens-responsividade" src="Imagens/menuIcon.png" alt="Logo do site"> 
         </ul>
     </nav>
     </header>
     <main>
-        <section id="home">
-            <video src="videoDesign.mp4" autoplay muted loop></video> 
+        <section id="home" class="home">
+            <video class="home__video" src="videoDesign.mp4" autoplay muted loop></video> 
         </section>
-        <section id="sobre">
-            <h3>Transformando seu layout</h3> 
-            <div id="containerSobre">
-                <div class="blocoSobre">
-                    <p class="titulosobre">CSS Puro</p>
-                    <p class="corpoSobre">Quer entender como os estilos funcionam sem complicações? Aprenda o poder do CSS puro e dê vida ao seu HTML com cores, fontes e espaçamentos do jeito certo.</p>
+        <section id="sobre" class="sobre">
+            <h3 class="sobre_titulo">Transformando seu layout</h3> 
+            <div class="sobre__container-principal">
+                <div class="sobre__container-conteudo">
+                    <p class="sobre__titulo-texto">CSS Puro</p>
+                    <p class="sobre__corpo-texto">Quer entender como os estilos funcionam sem complicações? Aprenda o poder do CSS puro e dê vida ao seu HTML com cores, fontes e espaçamentos do jeito certo.</p>
                 </div>
-                <div class="blocoSobre">
-                    <p class="titulosobre">CSS Flexbox</p>
-                    <p class="corpoSobre">Cansado de elementos fora do lugar? Com o Flexbox, organizar seu layout se torna rápido e intuitivo.</p>
+                <div class="sobre__container-conteudo">
+                    <p class="sobre__titulo-texto">CSS Flexbox</p>
+                    <p class="sobre__corpo-texto">Cansado de elementos fora do lugar? Com o Flexbox, organizar seu layout se torna rápido e intuitivo.</p>
                 </div>
-                <div class="blocoSobre">
-                    <p class="titulosobre">CSS grid</p>
-                    <p class="corpoSobre">Crie layouts complexos com facilidade usando o CSS Grid! Ideal para quem quer controle total sobre linhas e colunas.</p>
+                <div class="sobre__container-conteudo">
+                    <p class="sobre__titulo-texto">CSS grid</p>
+                    <p class="sobre__corpo-texto">Crie layouts complexos com facilidade usando o CSS Grid! Ideal para quem quer controle total sobre linhas e colunas.</p>
                 </div>
             </div>
         </section>
-        <section id="servicos">
-        </section>
-        <div id="containerDepoimento">
-            <section id="depoimentos">
-                <button id="setaEsquerda"><</button>
-                <p class="depoimento">“A equipe da agência superou todas as nossas expectativas. Atendimento impecável e resultado acima do esperado!”</p>
-                <p class="depoimentoResponsavel">– Joana P., diretora de marketing</p>
-                <button id="setaDireita">></button>
+        <div class="depoimentos__container">
+            <section class="depoimentos">
+                <button class="depoimentos__seta-esquerda depoimentos__seta-esquerda--hover"><</button>
+                <p class="depoimentos_texto">“A equipe da agência superou todas as nossas expectativas. Atendimento impecável e resultado acima do esperado!”</p>
+                <p class="depoimentos_assinatura">– Joana P., diretora de marketing</p>
+                <button class="depoimentos__seta-direita depoimentos__seta-esquerda--hover">></button>
             </section>
         </div>
-        <section id="contato">
-            <form>
-                <h2>FALE COM A GENTE</h2>
-                <input type="text" id="nome" placeholder="Digite seu nome">
-                <input type="number" id="celular" placeholder="Celular">
-                <input type="text" id="email" placeholder="Digite seu email">
-                <select name="tipoContato" id="tipoContato">
+        <section class="contato">
+            <form class="contato__formulario">
+                <h2 class="contato__titulo">FALE COM A GENTE</h2>
+                <input class="contato_formulario-input contato_formulario-input--hover" type="text" id="nome" placeholder="Digite seu nome">
+                <input class="contato_formulario-input contato_formulario-input--hover" type="number" id="celular" placeholder="Celular">
+                <input class="contato_formulario-input contato_formulario-input--hover" type="text" id="email" placeholder="Digite seu email">
+                <select name="tipoContato" class="contato__formulario-select contato__formulario-select--hover">
                     <option value="opcaoescolha">Como prefere ser contatado?</option>
                     <option value="opcao1">Whatsapp</option>
                     <option value="opcao2">Ligação</option>
                     <option value="opcao3">E-mail</option>
                 </select>
-                <textarea name="motivoContato" id="motivoContato" cols="50" rows="15" placeholder="Digite sua dúvida ou mensagem."></textarea>
-                <button type="button">Enviar</button>
+                <textarea name="motivoContato" class="contato_formulario-mensagem contato_formulario-mensagem--hover" cols="50" rows="15" placeholder="Digite sua dúvida ou mensagem."></textarea>
+                <button class="contato_formulario-botao contato_formulario-botao--hover" type="button">Enviar</button>
             </form>
         </section>
     </main>
-    <footer>
-        <div id="containerFooter">
+    <footer class="rodape">
+        <div class="rodape__container">
             <div>
-                <img id="logoInstagram" src="/Imagens/logoInstagram.png" alt="logoInstagram">
-                <a id="linkInstagram" href="https://www.instagram.com/">INSTAGRAM</a>
+                <img class="rodape_logos" id="logoInstagram" src="/Imagens/logoInstagram.png" alt="logoInstagram">
+                <a class="rodape_texto" id="linkInstagram" href="https://www.instagram.com/">INSTAGRAM</a>
             </div>
             <div>
-                <img id="logoLinkedin" src="/Imagens/logoLinkedin.png" alt="logoLinkedin">
-                <a id="linkLinkedin" href="https://www.linkedin.com/">LINKEDIN</a>
+                <img class="rodape_logos" id="logoLinkedin" src="/Imagens/logoLinkedin.png" alt="logoLinkedin">
+                <a class="rodape_texto" id="linkLinkedin" href="https://www.linkedin.com/">LINKEDIN</a>
             </div>
         </div>
-            <p>Transformando ideias em experiências digitais únicas.</p>
-            <p>Copyright © - Agência Criativa Web | 2025, Rua das Ideias, 456. São Paulo. Telefone: (11) 91234-5678</p>
+            <p class="rodape_texto">Transformando ideias em experiências digitais únicas.</p>
+            <p class="rodape_texto">Copyright © - Agência Criativa Web | 2025, Rua das Ideias, 456. São Paulo. Telefone: (11) 91234-5678</p>
     </footer>
 </body>
 </html>
