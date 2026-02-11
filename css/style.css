@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*Variaveis utilizadas para facilitar o controle do projeto*/
+/*Cores*/
+/*Azul escuro*/
+/*Amarelo ouro*/
+/*off white*/
+/*Cor amarelo transparecido formulario*/
+/*Cor cinza rodape*/
+/*Cor cinza texto do rodape*/
+/*Espaçamentos*/
+/*Escalas de tamanho*/
+/*Tipagem de contéudo*/
+.menu-nav {
+  background-color: rgb(212, 175, 55);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60px;
+  align-items: center;
+}
+.menu-nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menu-nav__logo {
+  height: 80px;
+  grid-column: 1/2;
+  margin-left: 1rem;
+}
+.menu-nav__titulo {
+  grid-column: 1/2;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.menu-nav__lista {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+  margin-right: 1rem;
+  list-style: none;
+}
+.menu-nav__item {
+  text-decoration: none;
+}
+.menu-nav__item:hover {
+  text-decoration: underline;
+  color: rgb(10, 32, 53);
+  cursor: pointer;
+}
+.menu-nav__itens-responsividade {
+  display: none;
+}
+
+/*Parte de entre em contato 'conosco'*/
+.contato {
+  min-height: 100vh;
+  padding-top: 1rem;
+  text-align: center;
+  background-color: rgb(10, 32, 53);
+}
+
+.contato__formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+.contato__formulario-titulo {
+  color: rgb(212, 175, 55);
+  margin: 2rem;
+}
+.contato__formulario-input, .contato__formulario-select, .contato__formulario-mensagem, .contato__formulario-botao {
+  text-align: center;
+  color: rgb(10, 32, 53);
+  width: 90%;
+  height: 2rem;
+  border-radius: 0.4rem;
+  background-color: rgb(212, 175, 55);
+  border: rgb(139, 120, 55) solid;
+}
+.contato__formulario-input:hover, .contato__formulario-select:hover, .contato__formulario-mensagem:hover, .contato__formulario-botao:hover {
+  background-color: rgb(248, 217, 115);
+}
+.contato__formulario-select {
+  color: rgba(10, 32, 53, 0.555);
+}
+.contato__formulario-mensagem {
+  width: 90% !important;
+  height: 25rem !important;
+}
+.contato__formulario-botao {
+  width: 20%;
+  height: 3rem;
+  cursor: pointer;
+}
+
+/*Depoimentos sobre o site*/
+.depoimentos__container {
+  background-color: rgb(212, 175, 55);
+  height: 50vh;
+  width: 100%;
+  align-content: center;
+}
+
+.depoimentos {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 2rem 2rem;
+  gap: 2rem;
+}
+.depoimentos__seta-esquerda {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border-radius: 50%;
+  justify-self: flex-end;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  align-self: center;
+  color: aliceblue;
+  border: white solid;
+  background-color: rgba(255, 255, 0, 0);
+}
+.depoimentos__seta-esquerda--hover:hover {
+  color: rgb(212, 175, 55);
+  background-color: antiquewhite;
+  border: rgb(212, 175, 55) solid;
+}
+.depoimentos_texto {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 0 1rem 1rem 1rem;
+}
+.depoimentos_assinatura {
+  grid-column: 2/3;
+  grid-row: 3/3;
+  padding-top: 1rem;
+}
+.depoimentos__seta-direita {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  border-radius: 50%;
+  justify-self: flex-start;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  align-self: center;
+  color: aliceblue;
+  border: white solid;
+  background-color: rgba(255, 255, 0, 0);
+}
+.depoimentos__seta-direita--hover:hover {
+  color: rgb(212, 175, 55);
+  background-color: antiquewhite;
+  border: rgb(212, 175, 55) solid;
+}
+
+/*Inicio da página*/
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.home__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Responsividade em celular - logo*/
+@media (max-width: 610px) {
+  .sobre {
+    height: 100vh;
+  }
+  .sobre__container-principal {
+    flex-direction: column;
+  }
+  .depoimentos {
+    display: flex;
+    flex-direction: column;
+  }
+  .depoimentos__seta-direita {
+    display: none;
+  }
+  .depoimentos__seta-esquerda {
+    display: none;
+  }
+  .menu-nav__titulo {
+    font-size: 0.9em;
+  }
+  .menu-nav__item {
+    display: none;
+  }
+  .menu-nav__itens-responsividade {
+    display: flex;
+    width: 5rem;
+  }
+}
+/*Rodape da pagina*/
+.rodape {
+  padding: 2rem 3rem 1rem 2rem;
+  background-color: #282836;
+  text-align: center;
+}
+.rodape__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.rodape_texto {
+  color: rgba(240, 248, 255, 0.297);
+}
+.rodape_logos {
+  background-color: rgba(240, 248, 255, 0.769);
+  border-radius: 0.4rem;
+  width: 20px;
+  height: 20px;
+}
+
+/*Parte do sobre/conteúdo principal*/
+.sobre {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(10, 32, 53);
+  color: antiquewhite;
+  position: relative;
+}
+.sobre__titulo {
+  padding-bottom: 1rem;
+  color: rgb(212, 175, 55);
+  text-align: center;
+}
+.sobre__container-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+}
+.sobre__titulo-texto {
+  text-align: center;
+  padding: 2rem;
+  color: rgb(212, 175, 55);
+}
+.sobre__corpo-texto {
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: antiquewhite;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: rgb(10, 32, 53);
+}
+
+/*# sourceMappingURL=style.css.map */

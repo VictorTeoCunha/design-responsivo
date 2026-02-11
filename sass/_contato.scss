@@ -1,0 +1,47 @@
+@use 'variaveis';
+@use 'mixins';
+
+/*Parte de entre em contato 'conosco'*/
+.contato {
+    min-height: variaveis.$tela-inteira;
+    padding-top: variaveis.$espacamento-padrao;
+    text-align: variaveis.$centralizar;
+    background-color: variaveis.$cor-primaria;
+}
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: variaveis.$centralizar;
+    align-items: variaveis.$centralizar;
+    gap: calc(variaveis.$espacamento-padrao * 1.5);
+    width: variaveis.$escala-total;
+    
+    
+    &-titulo {
+    color: variaveis.$cor-secundaria;
+    margin: calc(variaveis.$espacamento-padrao * 2);
+    }
+
+    &-input, &-select, &-mensagem, &-botao {
+        @include mixins.padrao-caixa-formulario;
+    
+        &:hover {
+        background-color: variaveis.$cor-secundaria-transparencia;
+        }
+    }
+
+    &-select {
+        color: rgba(10, 32, 53, 0.555);
+    }
+
+    &-mensagem {
+        width: 90% !important;
+        height: 25rem !important;
+    }
+
+    &-botao {
+        width: 20%;
+        height: calc(variaveis.$espacamento-padrao * 3);;
+        cursor: pointer;
+    }
+}

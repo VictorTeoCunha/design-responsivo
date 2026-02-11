@@ -1,0 +1,15 @@
+@use 'variaveis';
+@use 'mixins';
+@use 'menu';
+@use 'contato';
+@use 'depoimentos';
+@use 'home';
+@use 'responsividade';
+@use 'rodape';
+@use 'sobre';
+
+
+//Formatação global para problemas de compatibilidade
+* {
+    @include mixins.padrao-global
+}

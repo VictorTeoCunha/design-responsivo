@@ -1,0 +1,38 @@
+@use 'variaveis';
+
+/*Parte do sobre/conteúdo principal*/
+.sobre {
+    min-height: calc(variaveis.$tela-inteira / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: variaveis.$centralizar;
+    align-items: variaveis.$centralizar;
+    background-color: variaveis.$cor-primaria;
+    color: variaveis.$cor-branco-padrao;
+    position: relative;
+    
+    &__titulo {
+        padding-bottom: variaveis.$espacamento-padrao;
+        color: variaveis.$cor-secundaria;
+        text-align: variaveis.$centralizar;
+    }
+
+    &__container-principal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: variaveis.$escala-total;
+        max-width: 1200px;
+    }
+    &__titulo-texto {
+        text-align: variaveis.$centralizar;
+        padding: calc(variaveis.$espacamento-padrao * 2);
+        color: variaveis.$cor-secundaria;
+    }
+    &__corpo-texto {
+        text-align: variaveis.$centralizar;
+        padding-left: calc(variaveis.$espacamento-padrao * 2);
+        padding-right: calc(variaveis.$espacamento-padrao * 2);
+        color: variaveis.$cor-branco-padrao;
+    }
+}

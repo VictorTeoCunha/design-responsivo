@@ -1,0 +1,53 @@
+@use 'variaveis';
+
+.menu-nav {
+    background-color: variaveis.$cor-secundaria;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60px;     
+    align-items: variaveis.$centralizar;   
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: variaveis.$centralizar;            
+    }
+
+    &__logo {
+        height: 80px;
+        grid-column: 1/2;  
+        margin-left: variaveis.$espacamento-padrao;
+     }
+
+    &__titulo{
+        grid-column: 1/2;  
+        margin-left: variaveis.$espacamento-padrao;
+        font-size: 1.2rem;
+    }
+
+    &__lista {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: variaveis.$centralizar;
+        gap: 1em;
+        margin-right: variaveis.$espacamento-padrao;
+        list-style: none;
+    }
+
+    &__item {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;    
+            color: variaveis.$cor-primaria;
+            cursor: pointer;
+        }
+    }
+        
+    &__itens-responsividade{
+        display: none;
+    }    
+}
+    

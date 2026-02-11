@@ -1,0 +1,20 @@
+@use 'variaveis';
+
+/*Inicio da página*/
+.home {
+    width: variaveis.$escala-total;
+    height: variaveis.$tela-inteira;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: variaveis.$escala-total;
+        width: variaveis.$escala-total;
+        object-fit: cover;
+        z-index: -1;
+    }
+}

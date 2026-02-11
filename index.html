@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência Criativa Web</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -27,7 +27,7 @@
             <video class="home__video" src="videoDesign.mp4" autoplay muted loop></video> 
         </section>
         <section id="sobre" class="sobre">
-            <h3 class="sobre_titulo">Transformando seu layout</h3> 
+            <h3 class="sobre__titulo">Transformando seu layout</h3> 
             <div class="sobre__container-principal">
                 <div class="sobre__container-conteudo">
                     <p class="sobre__titulo-texto">CSS Puro</p>
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </section>
-        <div class="depoimentos__container">
+        <div id="depoimentos" class="depoimentos__container">
             <section class="depoimentos">
                 <button class="depoimentos__seta-esquerda depoimentos__seta-esquerda--hover"><</button>
                 <p class="depoimentos_texto">“A equipe da agência superou todas as nossas expectativas. Atendimento impecável e resultado acima do esperado!”</p>
@@ -51,22 +51,22 @@
                 <button class="depoimentos__seta-direita depoimentos__seta-esquerda--hover">></button>
             </section>
         </div>
-        <section class="contato">
-            <form class="contato__formulario">
-                <h2 class="contato__titulo">FALE COM A GENTE</h2>
-                <input class="contato_formulario-input contato_formulario-input--hover" type="text" id="nome" placeholder="Digite seu nome">
-                <input class="contato_formulario-input contato_formulario-input--hover" type="number" id="celular" placeholder="Celular">
-                <input class="contato_formulario-input contato_formulario-input--hover" type="text" id="email" placeholder="Digite seu email">
-                <select name="tipoContato" class="contato__formulario-select contato__formulario-select--hover">
-                    <option value="opcaoescolha">Como prefere ser contatado?</option>
-                    <option value="opcao1">Whatsapp</option>
-                    <option value="opcao2">Ligação</option>
-                    <option value="opcao3">E-mail</option>
-                </select>
-                <textarea name="motivoContato" class="contato_formulario-mensagem contato_formulario-mensagem--hover" cols="50" rows="15" placeholder="Digite sua dúvida ou mensagem."></textarea>
-                <button class="contato_formulario-botao contato_formulario-botao--hover" type="button">Enviar</button>
-            </form>
-        </section>
+        <section id="contato" class="contato">
+    <form class="contato__formulario">
+        <h2 class="contato__formulario-titulo">FALE COM A GENTE</h2>        
+        <input class="contato__formulario-input" type="text" id="nome" placeholder="Digite seu nome">
+        <input class="contato__formulario-input" type="number" id="celular" placeholder="Celular">
+        <input class="contato__formulario-input" type="email" id="email" placeholder="Digite seu email">
+        <select name="tipoContato" class="contato__formulario-select">
+            <option value="">Como prefere ser contatado?</option>
+            <option value="whatsapp">Whatsapp</option>
+            <option value="ligacao">Ligação</option>
+            <option value="email">E-mail</option>
+        </select>        
+        <textarea name="motivoContato" class="contato__formulario-mensagem" placeholder="Digite sua dúvida ou mensagem."></textarea>
+        <button class="contato__formulario-botao" type="submit">Enviar</button>
+    </form>
+</section>
     </main>
     <footer class="rodape">
         <div class="rodape__container">

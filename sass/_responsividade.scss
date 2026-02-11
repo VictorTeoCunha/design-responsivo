@@ -1,0 +1,38 @@
+@use 'variaveis';
+
+/* Responsividade em celular - logo*/
+@media (max-width: 610px) {
+    .sobre {
+        height: variaveis.$tela-inteira;
+        
+        &__container-principal {
+        flex-direction: column;
+        }
+    }
+    .depoimentos {
+        display: flex;
+        flex-direction: column;
+        
+        &__seta-direita {
+        display: none;
+        }
+        
+        &__seta-esquerda {
+            display: none;
+        }
+    }
+    .menu-nav {
+        &__titulo {
+        font-size: 0.9em;
+        }
+
+        &__item {
+        display: none;
+        }
+
+        &__itens-responsividade{
+        display: flex;
+        width: calc(variaveis.$espacamento-padrao * 5);
+        }
+    }
+}

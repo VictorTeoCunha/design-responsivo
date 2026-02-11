@@ -1,0 +1,26 @@
+@use 'variaveis';
+
+/*Rodape da pagina*/
+.rodape {
+    padding: calc(variaveis.$espacamento-padrao * 2) calc(variaveis.$espacamento-padrao * 3) variaveis.$espacamento-padrao calc(variaveis.$espacamento-padrao * 2);
+    background-color: variaveis.$cor-background-rodape;
+    text-align: variaveis.$centralizar;
+    
+    &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: variaveis.$centralizar;
+    padding-bottom: variaveis.$espacamento-padrao;
+    }
+    
+    &_texto{
+        color: variaveis.$cor-texto-rodape;
+    }
+    
+    &_logos {
+        background-color: rgba(240, 248, 255, 0.769);
+        border-radius: 0.4rem;
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -1,53 +1,53 @@
-# Projeto: Fundamentos de CSS – Puro, Flexbox e Grid
+Agência Criativa Web – Landing Page (Sass & CSS Moderno)
+[PT-BR] Este projeto é uma Landing Page desenvolvida para consolidar conhecimentos em arquitetura de código, responsividade e metodologias modernas de Front-end.
 
-Este projeto é uma página de estudo que demonstra a aplicação dos principais conceitos de CSS puro, incluindo layout com **Flexbox** e **Grid Layout**.
+[IT] Questo progetto è una Landing Page sviluppata per consolidare le conoscenze in architettura del codice, design responsivo e metodologie moderne di Front-end.
 
-## 🔍 Objetivo
+🔍 Diferenciais Técnicos | Caratteristiche Tecniche
+[PT-BR]
+Sass (SCSS) Modular: Uso de parciais e @use para melhor organização.
 
-Praticar e demonstrar conhecimentos adquiridos em CSS moderno, organizando o conteúdo em três seções principais:
-- CSS Puro (estilização direta)
-- Flexbox (layouts flexíveis em linha)
-- Grid (distribuição em grades)
+Metodologia BEM: Convenção de nomenclatura para código escalável.
 
-## 🚀 Tecnologias usadas
+Mixins: Automação de estilos repetitivos (formulários e botões).
 
-- HTML5
-- CSS3 (Puro, Flexbox e Grid)
-- Visual Studio Code
-- Git & GitHub
+Layout Híbrido: Flexbox para componentes e CSS Grid para a estrutura principal.
 
-## 📁 Estrutura
+[IT]
+Sass (SCSS) Modulare: Utilizzo di parziali e @use per una migliore organizzazione.
 
-/index.html
-/css/
-└─ style.css
-/images/
-README.md
+Metodologia BEM: Convenzione di nomenclatura per un codice scalabile.
 
-bash
-Copiar
-Editar
+Mixins: Automazione degli stili ripetitivi (form e bottoni).
 
+Layout Ibrido: Flexbox per i componenti e CSS Grid per la struttura principale.
 
-## 🛠️ Como usar
+🚀 Tecnologias | Tecnologie
+HTML5 (Semântico / Semantico)
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/seuusuario/nome-do-repositorio.git
-Abra a pasta no VS Code ou outro editor de sua preferência.
+Sass / SCSS (Arquitetura / Architettura)
 
-Abra o arquivo index.html em seu navegador.
+Git & GitHub
 
-📚 Aprendizados
+BEM Methodology
 
-Organização e modularização de CSS
+📁 Estrutura de Pastas | Struttura delle Cartelle
+Plaintext
 
-Criação de layouts responsivos
+├── scss/               # Código Fonte (Sass) | Codice Sorgente (Sass)
+│   ├── _variaveis.scss # Design Tokens
+│   ├── _mixins.scss    # Padrões reutilizáveis | Pattern riutilizzabili
+│   └── estilos.scss    # Arquivo principal | File principale
+├── css/                # Código Compilado | Codice Compilato
+└── index.html          # Estrutura | Struttura
+🛠️ Como usar | Come usare
+Clone o repositório | Clona il repository: git clone https://github.com/seu-usuario/agencia-criativa-web.git
 
-Diferenças e aplicações práticas entre Flexbox e Grid
+Abra o index.html | Apri l'index.html: Visualize o projeto no seu navegador. / Visualizza il progetto nel tuo browser.
 
-📌 Status
+🧠 Aprendizados | Competenze Acquisite
+[PT-BR] Entendimento de pré-processadores como ferramentas de scripting e a transição para o desenvolvimento Backend Java, focando em organização lógica e sistemas escaláveis.
 
-✅ Projeto finalizado para fins de prática e aprendizado.
+[IT] Comprensione dei preprocessori come strumenti di scripting e transizione verso lo sviluppo Backend Java, con focus sull'organizzazione logica e sistemi scalabili.
 
-Feito com 💙 por Victor Cunha
+Victor Cunha Enfermeiro e Desenvolvedor em transição (Itália 🇮🇹) Infermiere e Sviluppatore Backend Java in transizione (Italia 🇮🇹)

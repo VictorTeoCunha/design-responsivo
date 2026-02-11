@@ -1,0 +1,55 @@
+@use 'variaveis';
+@use 'mixins';
+
+/*Depoimentos sobre o site*/
+.depoimentos__container {
+    background-color: variaveis.$cor-secundaria;
+    height: calc(variaveis.$tela-inteira / 2);
+    width: variaveis.$escala-total;
+    align-content: variaveis.$centralizar;
+}
+.depoimentos {
+    text-align: variaveis.$centralizar;
+    margin-top: calc(variaveis.$espacamento-padrao * 3);
+    margin-bottom: calc(variaveis.$espacamento-padrao * 3);
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: calc(variaveis.$espacamento-padrao * 2) calc(variaveis.$espacamento-padrao * 2);   
+    gap: calc(variaveis.$espacamento-padrao * 2);
+    
+    &__seta-esquerda {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        border-radius: 50%;
+        justify-self: flex-end;
+        @include mixins.padrao-seta;
+        
+        &--hover:hover {
+            @include mixins.seta-depoimento;
+        }
+    }
+
+    &_texto{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding: 0 variaveis.$espacamento-padrao variaveis.$espacamento-padrao variaveis.$espacamento-padrao;
+    }
+
+    &_assinatura {
+        grid-column: 2/3;
+        grid-row: 3/3;
+        padding-top: variaveis.$espacamento-padrao;
+    }
+
+    &__seta-direita {
+        grid-column: 3/4;
+        grid-row: 1/3;
+        border-radius: 50%;
+        justify-self: flex-start;
+        @include mixins.padrao-seta;
+        
+        &--hover:hover {
+            @include mixins.seta-depoimento;
+        }
+    }
+}

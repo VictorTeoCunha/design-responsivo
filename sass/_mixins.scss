@@ -1,0 +1,33 @@
+@use 'variaveis';
+
+@mixin padrao-global {
+    margin: variaveis.$espacamento-limpo;
+    padding: variaveis.$espacamento-limpo;
+    color: variaveis.$cor-primaria;
+}
+
+@mixin seta-depoimento {
+    color: variaveis.$cor-secundaria;
+    background-color: variaveis.$cor-branco-padrao;
+    border: variaveis.$cor-secundaria solid;
+}
+
+@mixin padrao-seta {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    align-self: center;
+    color: aliceblue;
+    border: white solid;
+    background-color: rgba(255, 255, 0, 0);
+}
+
+@mixin padrao-caixa-formulario {
+    text-align: variaveis.$centralizar;
+    color: variaveis.$cor-primaria;
+    width: 90%;
+    height: 2rem;
+    border-radius: 0.4rem;
+    background-color:  variaveis.$cor-secundaria;
+    border: rgb(139, 120, 55) solid;
+}
